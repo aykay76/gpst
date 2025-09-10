@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS Location Tracker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checking permissions..."
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Start Tracking"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Tracking"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"
+        android:enabled="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Information"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/fileInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No file information available"
+        android:textSize="14sp"
+        android:fontFamily="monospace"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• GPS locations are saved every 5 seconds\n• Only saves when you move more than 5 meters\n• Files are rotated daily\n• Service runs in background"
+        android:textSize="12sp"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/darker_gray"
+        android:lineSpacingMultiplier="1.2" />
+
+</LinearLayout>
