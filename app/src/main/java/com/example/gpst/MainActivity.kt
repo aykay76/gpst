@@ -203,6 +203,7 @@ class MainActivity : AppCompatActivity() {
                     
                     fileInfoText.text = """
                         GPS Files: ${files.size}
+                        Directory: ${filesDir}
                         Latest: ${latestFile.name}
                         Size: ${fileSize} bytes
                         Locations: $lineCount
